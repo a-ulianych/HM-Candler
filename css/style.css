@@ -62,7 +62,6 @@ ul {
     height: 1px;
     background-color: #7B6152;
     width: 100%;
-
 }
 
 .menu__list {
@@ -87,7 +86,6 @@ ul {
     left: -23px;
     top: -3px;
 }
-
 
 /* Footer */
 .footer {
@@ -155,13 +153,30 @@ ul {
     .container {
         padding: 0 10px;
     }
-
+    
     .header__menu {
         order: 1;
     }
 
     .header__menu-list {
-        display: none;
+        width: 153px;
+        background-color: #7B6152;
+        color: #FFF8F3;
+
+        flex-direction: column;
+        gap: 20px 0;
+        padding: 25px 35px 25px 45px;
+        word-break: break-word;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(-110%);
+        transition: transform .5s ease;
+        z-index: 5;
+    }
+
+    .header__menu-list.menu--open {
+        transform: translateY(0%);
     }
 
     .menu__btn {
