@@ -90,6 +90,10 @@ button {
 
 
 /* Main */
+.main {
+    overflow-x: clip;
+}
+
 .top {
     padding: 40px 0 150px;
 }
@@ -111,6 +115,7 @@ button {
 
 .top__text {
     margin-bottom: 48px;
+    font-size: 14px;
 }
 
 .top__buy {
@@ -121,7 +126,7 @@ button {
     font-weight: 600;
 }
 
-.top__img {
+.top__picture {
     position: absolute;
     top: 0;
     left: 240px;
@@ -157,6 +162,23 @@ button {
     .container {
         padding: 0 20px;
     }
+
+    .top__content {
+        width: 333px;
+        padding: 95px 0 70px;
+    }
+
+    .top__img {
+        width: 655px;
+    }
+
+    .top__picture {
+        left: 300px;
+    }
+
+    .top__text {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -189,6 +211,24 @@ button {
         left: -16px;
         top: -3px;
         background-size: cover;
+    }
+
+    .top__content {
+        width: 230px;
+    }
+
+    .top__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .top__text {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .top__picture {
+        left: 180px;
     }
 }
 
@@ -241,5 +281,65 @@ button {
 
     .footer__menu-list {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .top {
+        padding: 30px 0 50px;
+    }
+
+    .top__img {
+        width: 309px;
+        left: 167px;
+    }
+
+    .top__content {
+        width: 180px;
+    }
+
+    .top__title {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .top__text {
+        font-size: 8px;
+        margin-bottom: 15px;
+    }
+
+    .top__buy {
+        font-size: 10px;
+        padding: 14px 41px;
+    }
+}
+
+@media (max-width: 360px) {
+    .top__img {
+        width: 185px;
+    }
+
+    .top__picture {
+        left: auto;
+        right: 0;
+    }
+
+    .top__content {
+        width: 200px;
+        padding: 20px 0 0;
+    }
+
+    .top__title {
+        font-size: 18px;
+    }
+
+    .top__text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .top__picture {
+        opacity: .5;
     }
 }
