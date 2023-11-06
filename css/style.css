@@ -213,6 +213,7 @@ button {
 .section__inner {
     display: grid;
     grid-template-columns: 370px auto;
+    gap: 30px;
 }
 
 .section__content-descr {
@@ -332,6 +333,7 @@ button {
     background-color: #A5978E;
     padding: 80px 0 60px;
     color: #fff;
+    margin-bottom: 150px;
 }
 
 .team__content {
@@ -432,11 +434,18 @@ button {
 
     .section__inner {
         grid-template-columns: 290px auto;
-        gap: 0 10px;
     }
 
     .products__content {
         gap: 67px;
+    }
+
+    .team__content {
+        gap: 30px 20px;
+    }
+
+    .team {
+        padding: 50px 0;
     }
 }
 
@@ -613,6 +622,25 @@ button {
         right: 0;
         bottom: 9px;
     }
+
+    .team__img {
+        width: 140px;
+    }
+
+    .team__item-box {
+        width: 109px;
+        padding: 9px 6px 10px;
+        bottom: 8px;
+        right: -24px;
+    }
+
+    .team__item-name {
+        font-size: 8px;
+    }
+
+    .team__item-descr {
+        font-size: 7px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -668,6 +696,11 @@ button {
 
     .section__content-descr {
         padding-bottom: 62px;
+    }
+
+    .team__item-box {
+        right: auto;
+        left: 80px;
     }
 }
 
@@ -754,6 +787,10 @@ button {
     .steps__list {
         gap: 25px 40px;
     }
+
+    .team {
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width: 404px) {
@@ -771,6 +808,28 @@ button {
 
     .courses__content {
         grid-template-columns: auto;
+    }
+
+    .team__content {
+        grid-template-columns: auto;
+    }
+
+    .team__img {
+        width: 204px;
+    }
+
+    .team__item-name {
+        font-size: 12px;
+    }
+
+    .team__item-descr {
+        font-size: 10px;
+    }
+
+    .team__item-box {
+        width: 150px;
+        bottom: 15px;
+        left: 148px;
     }
 }
 
