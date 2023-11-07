@@ -21,4 +21,16 @@ const swiperTwo = new Swiper('.certificates__slider', {
     },
     spaceBetween: 20,
     slidesPerView: 3,
+
+    breakpoints: {
+        640: {
+            slidesPerView: 3,
+        },
+        480: {
+            slidesPerView: 2,
+        },
+        360: {
+            slidesPerView: 1,
+        }
+    },
 });
