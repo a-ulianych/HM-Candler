@@ -451,6 +451,35 @@ button {
     background-color: #7B6152;
 }
 
+.promo {
+    background-image: url(../images/promo-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 140px 0;
+}
+
+.promo__inner {
+    display: flex;
+    align-items: center;
+}
+
+.promo__text {
+    font-size: 40px;
+    font-family: 'Yeseva One', serif;
+    color: #fff;
+    padding-left: 56px;
+    max-width: 765px;
+    margin-right: 110px;
+}
+
+.promo__link {
+    color: #272727;
+    background-color: #FFBD59;
+    display: inline-block;
+    padding: 14px 25px 12px;
+}
+
 /* Footer */
 .footer {
     background-color: #FFFFFF;
