@@ -451,6 +451,51 @@ button {
     background-color: #7B6152;
 }
 
+.accordeon__item {
+    background-color: #FAFAFA;
+    margin-bottom: 10px;
+}
+
+.accordeon__title {
+    width: 100%;
+    text-align: left;
+
+    font-family: 'Yeseva One', serif;
+    font-size: 16px;
+    display: block;
+    background-color: transparent;
+    padding: 16px 50px 16px 13px;
+    position: relative;
+}
+
+.accordeon__title::after {
+    content: "";
+    background-image: url(../images/arrow.svg);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 26px;
+    top: 17px;
+}
+
+.accordeon__title.accordeon__title--active::after {
+    transform: rotate(180deg);
+}
+
+.accordeon__text {
+    opacity: 0;
+    max-height: 0;
+    transition: opacity .3s, max-height .3s;
+}
+
+.accordeon__text ol {
+    padding: 20px 40px;
+}
+
+.accordeon__text.accordeon__text--visible {
+    opacity: 1;
+}
+
 .promo {
     background-image: url(../images/promo-bg.jpg);
     background-repeat: no-repeat;
@@ -478,6 +523,7 @@ button {
     background-color: #FFBD59;
     display: inline-block;
     padding: 14px 25px 12px;
+    text-align: center;
 }
 
 .contacts {
@@ -515,6 +561,9 @@ button {
 
 .form__input::placeholder {
     font-size: 14px;
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     color: #B3B3B3;
 }
 
@@ -526,6 +575,8 @@ button {
     margin-top: 36px;
     padding: 17px 34px;
 }
+
+
 
 /* Footer */
 .footer {
@@ -626,6 +677,22 @@ button {
 
     .certificates__content img {
         width: 280px;
+    }
+
+    .promo__link {
+        min-width: 135px;
+    }
+
+    .promo__text {
+        padding-left: 0;
+    }
+
+    .contacts__img {
+        width: 335px;
+    }
+
+    .contacts__inner {
+        gap: 15px;
     }
 }
 
@@ -837,6 +904,37 @@ button {
     .feedback__item-content {
         padding-bottom: 45px;
     }
+
+    .promo__text {
+        font-size: 15px;
+    }
+
+    .promo__link {
+        font-size: 12px;
+    }
+
+    .promo {
+        padding: 67px 0;
+    }
+
+    .contacts__img {
+        width: 187px;
+        object-fit: cover;
+    }
+
+    .form {
+        width: 440px;
+        padding: 30px 22px;
+    }
+
+    .form__title {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .form__btn {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -995,6 +1093,22 @@ button {
     .certificates__slider {
         width: 415px;
         margin: 0 auto;
+    }
+
+    .promo {
+        padding: 42px 0;
+    }
+
+    .contacts__img {
+        display: none;
+    }
+
+    .form__input::placeholder {
+        font-size: 10px;
+    }
+
+    .contacts {
+        padding-top: 50px;
     }
 }
 
@@ -1164,6 +1278,10 @@ button {
         margin: 0 auto 30px;
         left: 0;
         max-width: 100px;
+    }
+
+    .promo__text {
+        margin-right: 50px;
     }
 }
 
